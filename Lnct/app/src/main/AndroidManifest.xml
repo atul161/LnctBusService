@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.navigationdrawer.lnct.NavigationDrawerMainActivity"></activity>
+        <activity
+            android:name="com.navigationdrawer.lnct.NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".UserSignUpActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
