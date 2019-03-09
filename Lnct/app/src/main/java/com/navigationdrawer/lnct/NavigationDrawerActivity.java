@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -19,6 +21,12 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.example.lnct.R;
+import com.navigationfragment.lnct.Contact;
+import com.navigationfragment.lnct.DevelopedBy;
+import com.navigationfragment.lnct.FindBus;
+import com.navigationfragment.lnct.LocateBus;
+import com.navigationfragment.lnct.Notice;
+import com.navigationfragment.lnct.ViewRoute;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -28,6 +36,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
     Handler handler;
     Timer timer;
     Runnable runnable;
+    FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +44,8 @@ public class NavigationDrawerActivity extends AppCompatActivity
         setContentView(R.layout.activity_navigation_drawer);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        //setting a container
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -117,21 +128,47 @@ public class NavigationDrawerActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        /*
-        if (id == R.id.nav_camera) {
+
+        if (id==R.id.find_bus) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+            //handle kae rahe hai madharchod
+           FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+           fragmentTransaction.add(R.id.frame_layout,new FindBus(),null);
+           fragmentTransaction.addToBackStack("tag_back");
+            fragmentTransaction.commit();
+        } else if (R.id.locate_bus==id) {
+            FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.add(R.id.frame_layout,new LocateBus(),null);
+            fragmentTransaction.addToBackStack("tag_back");
+            fragmentTransaction.commit();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (R.id.view_route==id) {
+            FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.add(R.id.frame_layout,new ViewRoute(),null);
+            fragmentTransaction.addToBackStack("tag_back");
+            fragmentTransaction.commit();
 
-        } else if (id == R.id.nav_manage) {
+        } else if (R.id.notice==id) {
+            FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.add(R.id.frame_layout,new Notice(),null);
+            fragmentTransaction.addToBackStack("tag_back");
+            fragmentTransaction.commit();
 
-        } else if (id == R.id.nav_share) {
+        } else if (R.id.contact==id) {
+            FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.add(R.id.frame_layout,new Contact(),null);
+            fragmentTransaction.addToBackStack("tag_back");
+            fragmentTransaction.commit();
 
-        } else if (id == R.id.nav_send) {
+
+        } else if (R.id.developed_by==id) {
+            FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.add(R.id.frame_layout,new DevelopedBy(),null);
+            fragmentTransaction.addToBackStack("tag_back");
+            fragmentTransaction.commit();
 
         }
-        */
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
