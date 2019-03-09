@@ -36,6 +36,8 @@ public class NavigationDrawerActivity extends AppCompatActivity
     Handler handler;
     Timer timer;
     Runnable runnable;
+    Animation animation;
+    ImageView iBus;
     FragmentManager fragmentManager;
 
     @Override
@@ -66,11 +68,19 @@ public class NavigationDrawerActivity extends AppCompatActivity
         navigationView.setItemIconTintList(null);
         navigationView.setNavigationItemSelectedListener(this);
         View headerView=navigationView.getHeaderView(0);
+
+        FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.add(R.id.frame_layout,new FindBus(),null);
+        //fragmentTransaction.addToBackStack("tag_back");
+        fragmentTransaction.commit();
+        navigationView.getMenu().getItem(0).setChecked(true);
         //Animation of image bus
         final ImageView bus=headerView.findViewById(R.id.bus_id);
+        iBus=bus;
         Glide.with(this).load(R.drawable.bus).into(bus);
          final Animation anim= AnimationUtils.loadAnimation(this,R.anim.lefttoright);
         bus.startAnimation(anim);
+        animation=anim;
 
         handler=new Handler();
         runnable=new Runnable() {
@@ -87,6 +97,21 @@ public class NavigationDrawerActivity extends AppCompatActivity
                 handler.post(runnable);
             }
         },8000,8000);
+        DrawerLayout drawerLayout=findViewById(R.id.drawer_layout);
+
+
+        ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open_drawer, R.string.close_drawer) {
+            public void onDrawerClosed(View view) {
+                super.onDrawerClosed(view);
+                iBus.setAnimation(animation);
+            }
+            public void onDrawerOpened(View drawerView) {
+                super.onDrawerOpened(drawerView);
+                // Do whatever you want here
+
+            }
+        };
+        drawerLayout.addDrawerListener(mDrawerToggle);
     }
 
 
@@ -128,47 +153,45 @@ public class NavigationDrawerActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-
         if (id==R.id.find_bus) {
             // Handle the camera action
             //handle kae rahe hai madharchod
            FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
            fragmentTransaction.add(R.id.frame_layout,new FindBus(),null);
-           fragmentTransaction.addToBackStack("tag_back");
+           //fragmentTransaction.addToBackStack("tag_back");
             fragmentTransaction.commit();
         } else if (R.id.locate_bus==id) {
             FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
             fragmentTransaction.add(R.id.frame_layout,new LocateBus(),null);
-            fragmentTransaction.addToBackStack("tag_back");
+            //fragmentTransaction.addToBackStack("tag_back");
             fragmentTransaction.commit();
 
         } else if (R.id.view_route==id) {
             FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
             fragmentTransaction.add(R.id.frame_layout,new ViewRoute(),null);
-            fragmentTransaction.addToBackStack("tag_back");
+            //fragmentTransaction.addToBackStack("tag_back");
             fragmentTransaction.commit();
 
         } else if (R.id.notice==id) {
             FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
             fragmentTransaction.add(R.id.frame_layout,new Notice(),null);
-            fragmentTransaction.addToBackStack("tag_back");
+            //fragmentTransaction.addToBackStack("tag_back");
             fragmentTransaction.commit();
 
         } else if (R.id.contact==id) {
             FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
             fragmentTransaction.add(R.id.frame_layout,new Contact(),null);
-            fragmentTransaction.addToBackStack("tag_back");
+            //fragmentTransaction.addToBackStack("tag_back");
             fragmentTransaction.commit();
 
 
         } else if (R.id.developed_by==id) {
             FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
             fragmentTransaction.add(R.id.frame_layout,new DevelopedBy(),null);
-            fragmentTransaction.addToBackStack("tag_back");
+            //fragmentTransaction.addToBackStack("tag_back");
             fragmentTransaction.commit();
 
         }
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
