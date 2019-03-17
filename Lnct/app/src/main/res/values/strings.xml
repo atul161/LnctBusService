@@ -9,4 +9,56 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="year_array">
+        <item>Select Year</item>
+        <item>FIRST YEAR</item>
+        <item>SECOND YEAR</item>
+        <item>THIRD YEAR</item>
+        <item>FOUTH YEAR</item>
+    </string-array>
+
+    <string-array name="route_array">
+        <item>Select Route</item>
+        <item>Route1 LALGHATI</item>
+        <item>Route2 JK HOSPITAL</item>
+        <item>Route3 SAGAR AVENUE</item>
+        <item>Route4 RLL</item>
+        <item>Route5 RAILWAY COLONY</item>
+        <item>Route6 VIDYA SAGAR COLLEGE</item>
+        <item>Route7 DANA PANI</item>
+        <item>Route8 HABIBGANJ</item>
+        <item>Route9 DIG</item>
+        <item>Route10 NEW SABJI MANDI</item>
+        <item>Route11 PNT</item>
+        <item>Route12 ROSHANPURA</item>
+        <item>Route13 COACH FACTORY</item>
+        <item>Route14 BHARAT TALKIES</item>
+        <item>Route15 FAMOUS HOTEL</item>
+        <item>Route16 APSARA</item>
+        <item>Route17 BHARTIYA NIKETAN</item>
+        <item>Route18 GAUTAM NAGAR</item>
+        <item>Route19 CHETAK BRIDGE</item>
+        <item>Route20 JYOTI TALKIES</item>
+        <item>Route21 AYODHYA NAGAR</item>
+        <item>Route22 NARELA ROAD</item>
+        <item>Route23 PRAKASH NAGAR</item>
+        <item>Route24 NEW MINAL</item>
+        <item>Route25 SHRAVANKANTA</item>
+        <item>Route26 PIPLANI</item>
+        <item>Route27 SANSKRITI HOTEL</item>
+        <item>Route28 BIMA HOSPITAL</item>
+        <item>Route29 ANAND NAGAR</item>
+        <item>Route30 SEHORE</item>
+        <item>Route31 AYAPPA MANDIR</item>
+        <item>Route32 BANSAL HOSPITAL</item>
+        <item>Route34 AKRITI ECO CITY</item>
+        <item>Route35 SHAITAN SINGH CHOURAHA</item>
+        <item>Route36 NEELBAD</item>
+        <item>Route37 MANDIDEEP</item>
+        <item>Route38 VIDISHA</item>
+        <item>Route39 NAYAPURA</item>
+
+    </string-array>
+
 </resources>

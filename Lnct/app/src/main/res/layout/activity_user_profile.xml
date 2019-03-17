@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/login"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <!-- LnTrack Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="320dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Personal Details"
+            android:textColor="#ffffff"
+            android:layout_marginTop="16dp"/>
+
+
+        <!-- Name Label -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/name_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:boxStrokeWidth="8dp"
+            android:textColorHint="#ffffff">
+
+            <EditText android:id="@+id/student_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Enter Your Name"
+                android:textColor="#ffcb08"
+                android:textSize="20sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!-- Mobile Label -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/mobile_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:boxStrokeWidth="8dp"
+            android:textColorHint="#ffffff">
+
+            <EditText android:id="@+id/student_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Enter Mobile Number"
+                android:textColor="#ffcb08"
+                android:textSize="20sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Details Of Year and Route"
+            android:textColor="#ffffff"
+            android:layout_marginTop="16dp"/>
+        <!-- Year Label -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/year_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_height="60dp"
+                android:textColorHint="#ffffff">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/year_spinner_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select Year" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/year_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:clickable="true" />
+
+        </RelativeLayout>
+
+
+        <!-- Route Label -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/route_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_height="52dp"
+                android:textColorHint="#ffffff">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/route_spinner_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select Route" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/route_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_centerInParent="true"
+                android:clickable="true" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/add_student_details"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Add Details"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:background="@drawable/filled_signin_button"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:drawableRight="@drawable/ic_send_black_24dp"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="Designed and Developed by\nLNCT"
+        android:textAlignment="center"
+        android:gravity="bottom"
+        android:textColor="#f1f1f1f1"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

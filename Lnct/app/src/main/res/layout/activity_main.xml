@@ -8,16 +8,20 @@
     android:background="@drawable/bg">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="510dp">
 
 
         <ImageView
             android:id="@+id/logo"
             android:layout_width="320dp"
             android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="180dp"
@@ -35,55 +39,64 @@
             android:layout_width="398dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="NO MORE WORRIES
-JUST TRACK IT"
-            android:typeface="serif"
-            android:textStyle="bold"
-            android:textColor="#ffcb08"
+            android:layout_marginTop="30dp"
+            android:text="NO MORE WORRIES\nJUST TRACK IT"
             android:textAlignment="center"
+            android:textColor="#ffcb08"
             android:textSize="30sp"
-            android:layout_marginTop="30dp"/>
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/google_sign_in"
+            style="@style/CardButtonStyle"
+            android:layout_marginTop="64dp"
+            android:visibility="visible"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="Google Sign In"
+                    android:src="@drawable/google_sign_in" />
+
+                <TextView
+                    style="@style/CardTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/colorGoogleBlue"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="Sign In with Google"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
 
     </LinearLayout>
 
-
-
-
-
-    <Button
-        android:id="@+id/user_signup_btn"
-        android:layout_width="168dp"
-        android:layout_height="56dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/empty_signup_button"
-        android:text="SIGN UP"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="Designed and Developed by\nLNCT"
+        android:textAlignment="center"
+        android:textColor="#f1f1f1f1"
+        android:textSize="10sp"
         android:textStyle="bold"
-        android:textColor="#ffcb08"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:drawableLeft="@drawable/ic_person_add_black_24dp"
-        android:paddingLeft="12dp"/>
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2" />
 
-    <Button
-        android:id="@+id/user_signin_btn"
-        android:layout_width="168dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/filled_signin_button"
-        android:text="SIGN IN"
-        android:textStyle="bold"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:drawableLeft="@drawable/ic_person_black_24dp"
-        android:paddingLeft="12dp"
-        />
 
 
 </android.support.constraint.ConstraintLayout>
