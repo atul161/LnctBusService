@@ -18,6 +18,33 @@
         <item>FOUTH YEAR</item>
     </string-array>
 
+    <string-array name="bus_array">
+        <item>Bus No.</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+        <item>1234</item>
+    </string-array>
+
     <string-array name="route_array">
         <item>Select Route</item>
         <item>Route1 LALGHATI</item>

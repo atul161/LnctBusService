@@ -161,6 +161,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
             android:text="Add Details"
             android:textStyle="bold"
             android:textColor="#000000"
@@ -171,7 +172,54 @@
             android:paddingLeft="100dp"
             android:paddingRight="100dp"/>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="OR"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toLeftOf="@id/tvText"
+                android:background="#ffffff"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/tvText"
+                android:background="#ffffff"
+                />
+
+        </RelativeLayout>
+
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login as Admin?"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:textColor="#ffcb08"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"

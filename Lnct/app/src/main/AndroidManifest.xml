@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--<activity android:name=".SplashActivity"></activity>-->
+        <activity android:name="com.admin.lnct.AddNotice"></activity>
+        <activity android:name="com.admin.lnct.SetOneTimeBusDetails" />
+        <activity android:name="com.admin.lnct.ChangeBusDetails" />
+        <activity android:name="com.admin.lnct.AdminMainActivity" />
+        <activity android:name="com.admin.lnct.AdminLoginActivity" /> <!-- <activity android:name=".SplashActivity"></activity> -->
         <activity
             android:name="com.navigationdrawer.lnct.NavigationDrawerActivity"
             android:label="@string/title_activity_navigation_drawer"
