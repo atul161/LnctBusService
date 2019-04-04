@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.admin.lnct.AddNotice"></activity>
+        <activity android:name="com.locatebus.lnct.LocateActivity"></activity>
+        <activity android:name="com.viewroute.lnct.ViewRouteActivity" />
+        <activity android:name="com.notice.lnct.NoticeActivity" />
+        <activity android:name="com.findplace.lnct.FindPlace" />
+        <activity android:name="com.findbus.lnct.FindBusActivity" />
+        <activity android:name="com.findplace.lnct.FindPlaceActivity" />
+        <activity android:name="com.admin.lnct.AddNotice" />
         <activity android:name="com.admin.lnct.SetOneTimeBusDetails" />
         <activity android:name="com.admin.lnct.ChangeBusDetails" />
         <activity android:name="com.admin.lnct.AdminMainActivity" />

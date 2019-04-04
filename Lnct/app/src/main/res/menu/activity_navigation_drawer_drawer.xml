@@ -2,10 +2,22 @@
 
     <group android:checkableBehavior="single"
         android:id="@+id/u1">
+
+        <item
+            android:title="Home"
+            android:id="@+id/home"
+            android:checkable="true"
+            android:icon="@drawable/home"
+            />
+
+        <item
+            android:title="Find Place"
+            android:id="@+id/find_place"
+            android:icon="@drawable/lens"
+            />
         <item
             android:title="Find Bus"
             android:id="@+id/find_bus"
-            android:checkable="true"
             android:icon="@drawable/find"
             />
         <item

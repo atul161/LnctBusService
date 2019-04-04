@@ -24,6 +24,8 @@ import com.example.lnct.R;
 import com.navigationfragment.lnct.Contact;
 import com.navigationfragment.lnct.DevelopedBy;
 import com.navigationfragment.lnct.FindBus;
+import com.navigationfragment.lnct.FindPlace;
+import com.navigationfragment.lnct.Home;
 import com.navigationfragment.lnct.LocateBus;
 import com.navigationfragment.lnct.Notice;
 import com.navigationfragment.lnct.ViewRoute;
@@ -70,7 +72,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
         View headerView=navigationView.getHeaderView(0);
 
         FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.add(R.id.frame_layout,new FindBus(),null);
+        fragmentTransaction.add(R.id.frame_layout,new Home(),null);
         //fragmentTransaction.addToBackStack("tag_back");
         fragmentTransaction.commit();
         navigationView.getMenu().getItem(0).setChecked(true);
@@ -155,12 +157,26 @@ public class NavigationDrawerActivity extends AppCompatActivity
 
         if (id==R.id.find_bus) {
             // Handle the camera action
-            //handle kae rahe hai madharchod
+            //handle kae rahe ha
            FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
            fragmentTransaction.add(R.id.frame_layout,new FindBus(),null);
            //fragmentTransaction.addToBackStack("tag_back");
             fragmentTransaction.commit();
-        } else if (R.id.locate_bus==id) {
+        }
+        else if(id==R.id.find_place)
+        {
+            FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.add(R.id.frame_layout,new FindPlace(),null);
+            //fragmentTransaction.addToBackStack("tag_back");
+            fragmentTransaction.commit();
+        }
+        else if (id==R.id.home) {
+            FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.add(R.id.frame_layout,new Home(),null);
+            //fragmentTransaction.addToBackStack("tag_back");
+            fragmentTransaction.commit();
+        }
+        else if (R.id.locate_bus==id) {
             FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
             fragmentTransaction.add(R.id.frame_layout,new LocateBus(),null);
             //fragmentTransaction.addToBackStack("tag_back");

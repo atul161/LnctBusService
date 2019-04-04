@@ -55,13 +55,14 @@ public class MainActivity extends AppCompatActivity {
                 final Cursor findRes = myDbHelper.getStudentData();
                 //if the student's data is not present i.e. first time login then go to UserProfileActivity to insert data
                 if(findRes.getCount() == 0) {
-                    Intent intent = new Intent(MainActivity.this, AdminMainActivity.class);
+                    Intent intent = new Intent(MainActivity.this, NavigationDrawerActivity.class);
                     startActivity(intent);
                     finish();
                 }
                 //otherwise continue to NavigationDrawerActivity
                 else{
-                    Intent intent = new Intent(MainActivity.this, AdminMainActivity.class);
+
+                    Intent intent = new Intent(MainActivity.this, NavigationDrawerActivity.class);
                     startActivity(intent);
                     finish();
                 }
