@@ -31,7 +31,7 @@
         <android.support.v7.widget.CardView
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
-            android:id="@+id/change_bus_card"
+            android:id="@+id/add_bus_card"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp"
@@ -41,7 +41,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="#DB4437">
+                android:background="#D3D3D3">
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
@@ -55,7 +55,7 @@
                     android:textColor="#000000"
                     android:textSize="24sp"
                     android:layout_marginTop="10dp"
-                    android:text="Change Bus"/>
+                    android:text="Add Bus"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -65,16 +65,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Update the details of Changed Route"
+                    android:text="Add the details of a new bus"
                     android:padding="5dp"
-                    android:textColor="#fcfcfc"/>
+                    android:textColor="#000000"/>
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
-            android:id="@+id/add_notice_card"
+            android:id="@+id/update_bus_card"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp"
@@ -84,12 +84,12 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="#DB4437">
+                android:background="#D3D3D3">
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:background="@drawable/circle_green"
-                    android:src="@drawable/ic_notifications_active_black_24dp"
+                    android:src="@drawable/ic_directions_bus_black_24dp"
                     android:padding="10dp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -98,7 +98,7 @@
                     android:layout_marginTop="10dp"
                     android:textSize="24sp"
                     android:textColor="#000000"
-                    android:text="Add Notice"/>
+                    android:text="Update Bus"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -108,9 +108,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Add Some Notice for the Students"
+                    android:text="Update the details of bus"
                     android:padding="5dp"
-                    android:textColor="#fcfcfc"/>
+                    android:textColor="#000000"/>
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -122,35 +122,36 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <android.support.v7.widget.CardView
             android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:id="@+id/one_time_card"
-            android:layout_width="340dp"
-            android:layout_height="200dp"
+            app:cardElevation="10dp"
+            android:id="@+id/view_bus_details_cardview"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
             android:layout_margin="10dp"
             app:cardCornerRadius="8dp">
             <LinearLayout
-
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="#DB4437">
+                android:background="#D3D3D3">
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/circle_yellow"
-                    android:src="@drawable/ic_save_black_24dp"
+                    android:background="@drawable/circle_blue"
+                    android:src="@drawable/ic_book_black_24dp"
                     android:padding="10dp"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
                     android:layout_marginTop="10dp"
+                    android:text="View Details"
                     android:textColor="#000000"
                     android:textSize="24sp"
-                    android:text="One Time Details"/>
+                    android:textStyle="bold" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -160,14 +161,59 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Set the Details of Bus - One Time"
+                    android:text="View the details of alll currently running bus"
                     android:padding="5dp"
-                    android:textColor="#fcfcfc"/>
+                    android:textColor="#000000"/>
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
 
+
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardElevation="10dp"
+            android:id="@+id/notice_cardview"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#D3D3D3">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/circle_green"
+                    android:src="@drawable/ic_add_alert_black_24dp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Add Notice"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Add notice for change in bus details"
+                    android:padding="5dp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
     </LinearLayout>
 
 

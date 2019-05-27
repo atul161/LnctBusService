@@ -30,18 +30,18 @@ public class SliderAdapter extends PagerAdapter {
 
     //Array of headings
     public String[] slide_headings = {
-            "EAT",
-            "SLEEP",
-            "CODE",
-            "REPEAT"
+            "Find Bus",
+            "View Route Details",
+            "View Notice",
+            "Only Study"
     };
 
     //Array of description
     public String[] slide_desc = {
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+            "Gone are the days to hear to the announcements of bus route. Just enter your route and find the Bus details.",
+            "Get the details of the route. Find the timing of bus at a particular stop. So, next time you will not miss your bus due to timing.",
+            "View the notice by the bus admin. Here you can find the notice to be circulated for the students using the service of the bus.",
+            "So, next time you just have to focus on your studies and no more worries for finding the bus details. Use LnTrack and get the details of bus."
     };
 
     @Override

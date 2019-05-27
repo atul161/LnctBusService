@@ -12,10 +12,12 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.lnct.R;
+import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
+import com.github.javiersantos.materialstyleddialogs.enums.Style;
 
 public class Home extends Fragment
 {
-    CardView  findBusCardview,findPlaceCardview,noticeCardview,viewRouteCardView,locateBusCardview;
+    CardView  findBusCardview,trackBusCardview,noticeCardview,viewRouteCardView,locateBusCardview;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -25,22 +27,30 @@ public class Home extends Fragment
             @Override
             public void onClick(View view) {
                 FragmentTransaction fragmentTransaction=getActivity().getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.frame_layout,new FindBus());
+                fragmentTransaction.add(R.id.frame_layout,new FindBus());
                 //fragmentTransaction.addToBackStack("tag_back");
                 Toast.makeText(getContext(), "find bus", Toast.LENGTH_SHORT).show();
                 fragmentTransaction.commit();
             }
         });
 
-        findPlaceCardview=view.findViewById(R.id.find_place_cardview);
-        findPlaceCardview.setOnClickListener(new View.OnClickListener() {
+        trackBusCardview = view.findViewById(R.id.track_bus_cardview);
+        trackBusCardview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentTransaction fragmentTransaction=getActivity().getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.frame_layout,new FindPlace());
-                //fragmentTransaction.addToBackStack("tag_back");
-                Toast.makeText(getContext(), "find place", Toast.LENGTH_SHORT).show();
-                fragmentTransaction.commit();
+//                FragmentTransaction fragmentTransaction=getActivity().getSupportFragmentManager().beginTransaction();
+//                fragmentTransaction.add(R.id.frame_layout,new FindPlace());
+//                //fragmentTransaction.addToBackStack("tag_back");
+//                Toast.makeText(getContext(), "find place", Toast.LENGTH_SHORT).show();
+//                fragmentTransaction.commit();
+
+                new MaterialStyledDialog.Builder(getContext())
+                        .setTitle("This feature is under development")
+                        .setDescription("Track Bus feature is under development"+ "\n")
+                        .setStyle(Style.HEADER_WITH_ICON)
+                        .setIcon(R.drawable.ic_warning_black_24dp)
+                        //.setStyle(Style.HEADER_WITH_TITLE)
+                        .show();
             }
         });
 
@@ -49,7 +59,7 @@ public class Home extends Fragment
             @Override
             public void onClick(View view) {
                 FragmentTransaction fragmentTransaction=getActivity().getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.frame_layout,new Notice());
+                fragmentTransaction.add(R.id.frame_layout,new Notice());
                 //fragmentTransaction.addToBackStack("tag_back");
                 Toast.makeText(getContext(), "notice", Toast.LENGTH_SHORT).show();
                 fragmentTransaction.commit();
@@ -61,7 +71,7 @@ public class Home extends Fragment
             @Override
             public void onClick(View view) {
                 FragmentTransaction fragmentTransaction=getActivity().getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.frame_layout,new ViewRoute());
+                fragmentTransaction.add(R.id.frame_layout,new ViewRoute());
                 //fragmentTransaction.addToBackStack("tag_back");
                 Toast.makeText(getContext(), "view route", Toast.LENGTH_SHORT).show();
                 fragmentTransaction.commit();
@@ -72,14 +82,27 @@ public class Home extends Fragment
         locateBusCardview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentTransaction fragmentTransaction=getActivity().getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.frame_layout,new LocateBus());
-                //fragmentTransaction.addToBackStack("tag_back");
-                Toast.makeText(getContext(), "locate", Toast.LENGTH_SHORT).show();
-                fragmentTransaction.commit();
+//                FragmentTransaction fragmentTransaction=getActivity().getSupportFragmentManager().beginTransaction();
+//                fragmentTransaction.add(R.id.frame_layout,new LocateBus());
+//                //fragmentTransaction.addToBackStack("tag_back");
+//                Toast.makeText(getContext(), "locate", Toast.LENGTH_SHORT).show();
+//                fragmentTransaction.commit();
+
+
+                new MaterialStyledDialog.Builder(getContext())
+                        .setTitle("This feature is under development")
+                        .setDescription("Locate Bus feature is under development"+ "\n")
+                        .setStyle(Style.HEADER_WITH_ICON)
+                        .setIcon(R.drawable.ic_warning_black_24dp)
+                        //.setStyle(Style.HEADER_WITH_TITLE)
+                        .show();
             }
         });
 
         return view;
     }
+
+
+
+
 }

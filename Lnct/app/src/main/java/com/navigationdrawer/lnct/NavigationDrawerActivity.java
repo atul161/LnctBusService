@@ -1,5 +1,6 @@
 package com.navigationdrawer.lnct;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
@@ -18,9 +19,13 @@ import android.view.MenuItem;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.lnct.MainActivity;
 import com.example.lnct.R;
+import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
+import com.github.javiersantos.materialstyleddialogs.enums.Style;
 import com.navigationfragment.lnct.Contact;
 import com.navigationfragment.lnct.DevelopedBy;
 import com.navigationfragment.lnct.FindBus;
@@ -41,6 +46,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
     Animation animation;
     ImageView iBus;
     FragmentManager fragmentManager;
+    boolean doubleBackToExitPressedOnce = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,16 +55,17 @@ public class NavigationDrawerActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setTitle("LnTrack");
         //setting a container
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+//
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -123,7 +130,22 @@ public class NavigationDrawerActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+
+            if (doubleBackToExitPressedOnce) {
+                super.onBackPressed();
+                return;
+            }
+
+            this.doubleBackToExitPressedOnce = true;
+            Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+
+            new Handler().postDelayed(new Runnable() {
+
+                @Override
+                public void run() {
+                    doubleBackToExitPressedOnce = false;
+                }
+            }, 2000);
         }
     }
 
@@ -162,13 +184,21 @@ public class NavigationDrawerActivity extends AppCompatActivity
            fragmentTransaction.add(R.id.frame_layout,new FindBus(),null);
            //fragmentTransaction.addToBackStack("tag_back");
             fragmentTransaction.commit();
+
         }
         else if(id==R.id.find_place)
         {
-            FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.add(R.id.frame_layout,new FindPlace(),null);
+//            FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+//            fragmentTransaction.add(R.id.frame_layout,new FindPlace(),null);
             //fragmentTransaction.addToBackStack("tag_back");
-            fragmentTransaction.commit();
+//            fragmentTransaction.commit();
+            new MaterialStyledDialog.Builder(this)
+                    .setTitle("This feature is under development")
+                    .setDescription("Locate Bus feature is under development"+ "\n")
+                    .setStyle(Style.HEADER_WITH_ICON)
+                    .setIcon(R.drawable.ic_warning_black_24dp)
+                    //.setStyle(Style.HEADER_WITH_TITLE)
+                    .show();
         }
         else if (id==R.id.home) {
             FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
@@ -177,10 +207,18 @@ public class NavigationDrawerActivity extends AppCompatActivity
             fragmentTransaction.commit();
         }
         else if (R.id.locate_bus==id) {
-            FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.add(R.id.frame_layout,new LocateBus(),null);
+//            FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+//            fragmentTransaction.add(R.id.frame_layout,new LocateBus(),null);
             //fragmentTransaction.addToBackStack("tag_back");
-            fragmentTransaction.commit();
+//            fragmentTransaction.commit();
+
+            new MaterialStyledDialog.Builder(this)
+                    .setTitle("This feature is under development")
+                    .setDescription("Track Bus feature is under development"+ "\n")
+                    .setStyle(Style.HEADER_WITH_ICON)
+                    .setIcon(R.drawable.ic_warning_black_24dp)
+                    //.setStyle(Style.HEADER_WITH_TITLE)
+                    .show();
 
         } else if (R.id.view_route==id) {
             FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
@@ -201,7 +239,13 @@ public class NavigationDrawerActivity extends AppCompatActivity
             fragmentTransaction.commit();
 
 
-        } else if (R.id.developed_by==id) {
+        }
+        else if(R.id.logout==id)
+        {
+            startActivity(new Intent(this, MainActivity.class));
+            finish();
+        }
+        else if (R.id.developed_by==id) {
             FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
             fragmentTransaction.add(R.id.frame_layout,new DevelopedBy(),null);
             //fragmentTransaction.addToBackStack("tag_back");
@@ -213,4 +257,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
+
 }

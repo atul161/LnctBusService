@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lnct">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,14 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewRouteActivity"></activity>
+        <activity android:name="com.admin.lnct.UpdateBusDetails"></activity>
+        <activity android:name=".FindBusViewRootActivity" />
+        <activity android:name="com.root.databasemanager.AndroidDatabaseManager" />
+        <activity android:name=".ViewRouteActivity" />
         <activity android:name="com.admin.lnct.AdminYearSelectActivity" />
-        <activity android:name="com.locatebus.lnct.LocateActivity" />
-        <activity android:name="com.viewroute.lnct.ViewRouteActivity" />
-        <activity android:name="com.notice.lnct.NoticeActivity" />
-        <activity android:name="com.findplace.lnct.FindPlace" />
-        <activity android:name="com.findbus.lnct.FindBusActivity" />
-        <activity android:name="com.findplace.lnct.FindPlaceActivity" />
         <activity android:name="com.admin.lnct.AddNotice" />
         <activity android:name="com.admin.lnct.SetOneTimeBusDetails" />
         <activity android:name="com.admin.lnct.ChangeBusDetails" />

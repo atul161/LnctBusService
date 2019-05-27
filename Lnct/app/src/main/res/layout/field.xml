@@ -1,26 +1,1237 @@
-<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:id="@+id/linear1"
+    android:visibility="gone"
     android:layout_height="50dp"
-    android:orientation="horizontal" >
+    android:orientation="horizontal">
     <Spinner
-        android:id="@+id/number_edit_text"
+        android:id="@+id/number_edit_text1"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="5"
         android:entries="@array/route_array"/>
     <Spinner
-        android:id="@+id/type_spinner"
+        android:id="@+id/type_spinner1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="3"
         android:entries="@array/bus_array"
         android:gravity="right" />
     <Button
-        android:id="@+id/delete_button"
+        android:id="@+id/delete_button1"
         android:layout_width="0dp"
         android:layout_height="40dp"
+        android:visibility="gone"
         android:layout_weight="1"
         android:background="@android:drawable/ic_delete"
-        android:onClick="onDelete"/>
+        android:onClick="onDelete1"/>
+</LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linear2"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete2"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linear3"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button3"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete3"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear4"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button4"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete4"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear5"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button5"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete5"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear6"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button6"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete6"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="50dp"
+        android:id="@+id/linear7"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button7"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete7"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear8"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button8"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete8"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear9"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button9"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete9"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear10"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button10"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete10"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear11"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button11"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete11"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear12"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button12"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete12"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear13"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button13"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete13"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linear14"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button14"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete14"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear15"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button15"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete15"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear16"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button16"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete16"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linear17"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text17"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button17"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete17"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear18"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text18"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button18"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete18"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear19"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text19"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner19"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button19"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete19"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linear20"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text20"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button20"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete20"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear21"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text21"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner21"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button21"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete21"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linear22"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text22"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button22"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete22"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linear23"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text23"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button23"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete23"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear24"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner24"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button24"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete24"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear25"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button25"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete25"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear26"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text26"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner26"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button26"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete26"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear27"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text27"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner27"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button27"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete27"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear28"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text28"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner28"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button28"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete28"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear29"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text29"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner29"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button29"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete29"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear30"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text30"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner30"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button30"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete30"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear31"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text31"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner31"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button31"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete31"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear32"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text32"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner32"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button32"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete32"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear33"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text33"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button33"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete33"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="50dp"
+        android:id="@+id/linear34"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text34"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner34"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button34"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete34"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear35"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text35"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner35"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button35"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete35"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linear36"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text36"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner36"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button36"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete36"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear37"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text37"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner37"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button37"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete37"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear37"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text37"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner37"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button37"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete37"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear38"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text38"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner38"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button38"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete38"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear39"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text39"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner39"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button39"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete39"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:id="@+id/linear40"
+        android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/number_edit_text40"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:entries="@array/route_array"/>
+        <Spinner
+            android:id="@+id/type_spinner40"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/bus_array"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button40"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete40"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:onClick="done"/>
 </LinearLayout>

@@ -61,7 +61,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Update the details of Changed Route"
+                    android:text="Find the details of BUS going to your stop"
                     android:padding="5dp"
                     android:textColor="#000000"/>
 
@@ -72,7 +72,7 @@
 
         <android.support.v7.widget.CardView
             android:foreground="?android:attr/selectableItemBackground"
-            android:id="@+id/find_place_cardview"
+            android:id="@+id/track_bus_cardview"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp"
@@ -88,14 +88,14 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:background="@drawable/circle_green"
-                    android:src="@drawable/ic_notifications_active_black_24dp"
+                    android:src="@drawable/ic_map_black_24dp"
                     android:padding="10dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Find Place"
+                    android:text="Track Bus"
                     android:textColor="#000000"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -108,7 +108,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Add Some Notice for the Students"
+                    android:text="Track the location of your BUS"
                     android:padding="5dp"
                     android:textColor="#000000"/>
 
@@ -141,7 +141,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:background="@drawable/circle_yellow"
-                    android:src="@drawable/ic_save_black_24dp"
+                    android:src="@drawable/ic_add_alert_black_24dp"
                     android:padding="10dp"/>
 
                 <TextView
@@ -161,7 +161,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Set the Details of Bus - One Time"
+                    android:text="Get yourself updated about any change in Bus details"
                     android:padding="5dp"
                     android:textColor="#000000"/>
 
@@ -197,7 +197,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:background="@drawable/circle_blue"
-                    android:src="@drawable/ic_directions_bus_black_24dp"
+                    android:src="@drawable/ic_navigation_black_24dp"
                     android:padding="10dp"/>
 
                 <TextView
@@ -217,7 +217,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Update the details of Changed Route"
+                    android:text="Get the information about your route"
                     android:padding="5dp"
                     android:textColor="#000000"/>
 
@@ -244,7 +244,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:background="@drawable/circle_green"
-                    android:src="@drawable/ic_notifications_active_black_24dp"
+                    android:src="@drawable/ic_place_black_24dp"
                     android:padding="10dp"/>
 
                 <TextView
@@ -264,7 +264,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Add Some Notice for the Students"
+                    android:text="Locate your bus in the campus"
                     android:padding="5dp"
                     android:textColor="#000000"/>
 

@@ -219,7 +219,8 @@
         android:gravity="center"
         android:layout_margin="8dp"
         android:textColor="#ffcb08"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:onClick="LoginAdmin"/>
 
     <TextView
         android:layout_width="wrap_content"

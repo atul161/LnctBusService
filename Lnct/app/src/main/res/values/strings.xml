@@ -20,32 +20,33 @@
 
     <string-array name="bus_array">
         <item>Bus No.</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
-        <item>1234</item>
+        <item>1000</item>
+        <item>1001</item>
+        <item>1002</item>
+        <item>1003</item>
+        <item>1004</item>
+        <item>1005</item>
+        <item>1006</item>
+        <item>1007</item>
+        <item>1008</item>
+        <item>1009</item>
+        <item>1010</item>
+        <item>1011</item>
+        <item>1012</item>
+        <item>1013</item>
+        <item>1014</item>
+        <item>1015</item>
+        <item>1016</item>
+        <item>1017</item>
+        <item>1018</item>
+        <item>1019</item>
+        <item>1020</item>
+        <item>1021</item>
+        <item>1022</item>
     </string-array>
 
     <string-array name="route_array">
+
         <item>Select Route</item>
         <item>Route1 LALGHATI</item>
         <item>Route2 JK HOSPITAL</item>

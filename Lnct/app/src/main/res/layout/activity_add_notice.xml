@@ -75,7 +75,7 @@
             android:drawableRight="@drawable/ic_send_black_24dp"
             android:paddingLeft="100dp"
             android:paddingRight="100dp"
-            android:text="Login"
+            android:text="Notify"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="20sp"

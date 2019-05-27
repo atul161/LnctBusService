@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.admin.lnct.AdminLoginActivity;
 import com.navigationdrawer.lnct.NavigationDrawerActivity;
 
 public class UserProfileActivity extends AppCompatActivity {
@@ -63,8 +64,8 @@ public class UserProfileActivity extends AppCompatActivity {
         addStudentData = (Button) findViewById(R.id.add_student_details);
         //viewStudentData = (Button) findViewById(R.id.get_student_details);
 
-        ArrayAdapter<CharSequence> studentYearAdapter = ArrayAdapter.createFromResource(this, R.array.year_array, R.layout.colored_spinner_items);
-        studentYearAdapter.setDropDownViewResource(R.layout.spinner_item);
+        ArrayAdapter<CharSequence> studentYearAdapter = ArrayAdapter.createFromResource(this, R.array.year_array, R.layout.spinner_item_find_bus);
+        studentYearAdapter.setDropDownViewResource(R.layout.spinner_dropdown);
 
         studentYear.setAdapter(studentYearAdapter);
 
@@ -82,9 +83,9 @@ public class UserProfileActivity extends AppCompatActivity {
         });
 
 
-        ArrayAdapter<CharSequence> studentRouteAdapter = ArrayAdapter.createFromResource(this, R.array.route_array, R.layout.colored_spinner_items);
+        ArrayAdapter<CharSequence> studentRouteAdapter = ArrayAdapter.createFromResource(this, R.array.route_array, R.layout.spinner_item_find_bus);
 
-        studentRouteAdapter.setDropDownViewResource(R.layout.spinner_item);
+        studentRouteAdapter.setDropDownViewResource(R.layout.spinner_dropdown);
 
         studentRoute.setAdapter(studentRouteAdapter);
 
@@ -172,5 +173,10 @@ public class UserProfileActivity extends AppCompatActivity {
         builder.setTitle(title);
         builder.setMessage(message);
         builder.show();
+    }
+
+    public void LoginAdmin(View view) {
+        Intent intent = new Intent(UserProfileActivity.this, AdminLoginActivity.class);
+        startActivity(intent);
     }
 }

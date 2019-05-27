@@ -10,20 +10,20 @@ import com.example.lnct.R;
 
 public class AdminMainActivity extends AppCompatActivity {
 
-    CardView changeBus;
-    CardView addNotice;
-    CardView oneTimeDetails;
+    CardView addBus, updateBus;
+    CardView addNotice, viewDetails;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_main);
 
-        changeBus = (CardView) findViewById(R.id.change_bus_card);
-        addNotice = (CardView) findViewById(R.id.add_notice_card);
-        oneTimeDetails = (CardView) findViewById(R.id.one_time_card);
+        addBus = (CardView) findViewById(R.id.add_bus_card);
+        addNotice = (CardView) findViewById(R.id.notice_cardview);
+        updateBus = (CardView) findViewById(R.id.update_bus_card);
+        viewDetails = (CardView) findViewById(R.id.view_bus_details_cardview);
 
-        changeBus.setOnClickListener(new View.OnClickListener() {
+        addBus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AdminMainActivity.this, ChangeBusDetails.class);
@@ -39,11 +39,18 @@ public class AdminMainActivity extends AppCompatActivity {
             }
         });
 
-        oneTimeDetails.setOnClickListener(new View.OnClickListener() {
+        updateBus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminMainActivity.this, SetOneTimeBusDetails.class);
+                Intent intent = new Intent(AdminMainActivity.this, UpdateBusDetails.class);
                 startActivity(intent);
+            }
+        });
+
+        viewDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
     }

@@ -11,23 +11,29 @@
             />
 
         <item
-            android:title="Find Place"
-            android:id="@+id/find_place"
-            android:icon="@drawable/lens"
-            />
-        <item
             android:title="Find Bus"
             android:id="@+id/find_bus"
             android:icon="@drawable/find"
             />
+
         <item
-            android:title="Locate Bus"
+            android:title="Track Bus"
             android:id="@+id/locate_bus"
             android:icon="@drawable/locate"/>
+
         <item
             android:title="View Route"
             android:id="@+id/view_route"
             android:icon="@drawable/route"/>
+
+        <item
+            android:title="Locate Bus"
+            android:id="@+id/find_place"
+            android:icon="@drawable/lens"
+            />
+
+
+
     </group>
     <group android:checkableBehavior="single"
         android:id="@+id/u2"

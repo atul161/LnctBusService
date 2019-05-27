@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/map1"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sehore Route details"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="24sp"
+        android:layout_margin="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="580dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="24dp"
+                    android:background="#FFCB08"
+                    android:layout_marginBottom="40dp"/>
+
+                <ImageView
+                    android:id="@+id/circle_image_view1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_adjust_black_24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"/>
+
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/one_time_card1"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_toRightOf="@id/circle_image_view1"
+                    app:cardBackgroundColor="#ffcb08"
+                    android:layout_marginTop="16dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/place1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sehore"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/circle_image_view1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="08:40 AM"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/place1"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="64dp"
+                        android:layout_gravity="center"/>
+                </android.support.v7.widget.CardView>
+
+
+                <ImageView
+                    android:id="@+id/circle_image_view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_adjust_black_24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="88dp"/>
+
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/one_time_card2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:layout_toRightOf="@id/circle_image_view2"
+                    app:cardBackgroundColor="#ffcb08"
+                    android:layout_marginTop="88dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/place2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fanda"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/circle_image_view2"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="08:50 AM"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/place2"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="64dp"
+                        android:layout_gravity="center"/>
+                </android.support.v7.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/circle_image_view3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_adjust_black_24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="160dp"/>
+
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/one_time_card3"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:layout_toRightOf="@id/circle_image_view3"
+                    app:cardBackgroundColor="#ffcb08"
+                    android:layout_marginTop="160dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/place3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Khajuri"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/circle_image_view3"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09:00 AM"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/place3"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="64dp"
+                        android:layout_gravity="center"/>
+                </android.support.v7.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/circle_image_view4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_adjust_black_24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="232dp"/>
+
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/one_time_card4"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:layout_toRightOf="@id/circle_image_view4"
+                    app:cardBackgroundColor="#ffcb08"
+                    android:layout_marginTop="232dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/place4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bairagarh"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/circle_image_view4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09:15 AM"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/place4"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="64dp"
+                        android:layout_gravity="center"/>
+                </android.support.v7.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/circle_image_view5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_adjust_black_24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="304dp"/>
+
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/one_time_card5"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:layout_toRightOf="@id/circle_image_view5"
+                    app:cardBackgroundColor="#ffcb08"
+                    android:layout_marginTop="300dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/place5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gandhi Nagar"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/circle_image_view5"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09:20 AM"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/place5"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="64dp"
+                        android:layout_gravity="center"/>
+
+                </android.support.v7.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/circle_image_view6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_adjust_black_24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="376dp"/>
+
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/one_time_card6"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:layout_toRightOf="@id/circle_image_view6"
+                    app:cardBackgroundColor="#ffcb08"
+                    android:layout_marginTop="376dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/place6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rajiv Gandhi"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/circle_image_view6"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09:25 AM"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/place6"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="64dp"
+                        android:layout_gravity="center"/>
+
+                </android.support.v7.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/circle_image_view7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_adjust_black_24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="448dp"/>
+
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/one_time_card7"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:layout_toRightOf="@id/circle_image_view7"
+                    app:cardBackgroundColor="#ffcb08"
+                    android:layout_marginTop="448dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/place7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Jail"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/circle_image_view7"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09:30 AM"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/place7"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="64dp"
+                        android:layout_gravity="center"/>
+
+                </android.support.v7.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/circle_image_view8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_adjust_black_24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="520dp"/>
+
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/one_time_card8"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:layout_toRightOf="@id/circle_image_view7"
+                    app:cardBackgroundColor="#ffcb08"
+                    android:layout_marginTop="520dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/place8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LNCT"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/circle_image_view8"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:10 AM"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/place8"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="64dp"
+                        android:layout_gravity="center"/>
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

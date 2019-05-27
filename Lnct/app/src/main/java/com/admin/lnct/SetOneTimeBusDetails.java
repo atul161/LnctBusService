@@ -34,4 +34,5 @@ public class SetOneTimeBusDetails extends AppCompatActivity {
     public void onDelete(View v) {
         parentLinearLayout.removeView((View) v.getParent());
     }
+
 }
