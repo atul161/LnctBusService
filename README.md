@@ -1,5 +1,6 @@
 # LnctBusService
-This is the github page for the official mobile application of **LNCT Group of Colleges** for Bus tracking.
+This is the github page for the official mobile application of **LNCT Group of Colleges** for Bus tracking.  
+
 Following are the features that are present in the app(Students):  
   * Instant tracking of bus  
   * Find the route of your bus  
